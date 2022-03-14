@@ -1,9 +1,13 @@
 <!doctype html>
 <html lang="de">
   <head>
-    <script> let button;
+    <script>
     function setup() {
       alert('Test');
+    }
+      
+    function bestaetigung_teilnahme() {
+      alert('Vielen Dank für Ihre Teilnahme!');
     }
 
     function changeBG() {
@@ -113,7 +117,7 @@
     <textarea id="review" name="review" rows="4" cols="50">
     </textarea>
     <br><br>
-    <input type="submit" value="Submit">
+      <button onclick="bestaetigung_teilnahme()">Submit </button>
     </form>
     <p>Click the "Submit" button to save your feedback form.</p>
  
