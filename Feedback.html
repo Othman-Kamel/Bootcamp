@@ -2,19 +2,18 @@
 <html lang="de">
   <head>
     <script> let button;
-function setup() {
-  createCanvas(100, 100);
-  background(0);
-  button = createButton('click me');
-  button.position(0, 0);
-  button.mousePressed(changeBG);
-}
+    function setup() {
+      createCanvas(100, 100);
+      background(0);
+      button = createButton('click me');
+      button.position(0, 0);
+      button.mousePressed(changeBG);
+    }
 
-function changeBG() {
-  let val = random(255);
-  background(val);
+    function changeBG() {
+      let val = random(255);
+      background(val);
 } 
-    
     </script>
     <title> Bootcamp 03/22</title>
     <meta charset="utf-8">
@@ -24,5 +23,7 @@ function changeBG() {
   </head>
   <body>
     <h1> Feedback Bootcamp März 2022 test </h1>
+    <p onload="setup()"> test </p>
+    <p onload="changeBG()"> test </p>
   </body>
 </html>
