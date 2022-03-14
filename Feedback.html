@@ -16,6 +16,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+    <style>
+    .label_radio{
+      height: 19px;
+      width:50px;
+      border: solid;
+}
+</style>
   </head>
   <body>
     <h1> Feedback Bootcamp März 2022 </h1>
@@ -28,15 +35,15 @@
     <form>
     <p>Geben Sie Ihre Meinung zum Schulungsinhalt an:</p>
     <fieldset>
-      <label> Bewertung (1: Sehr gut, 5: Schlecht) -> </label>
+      <label> Bewertung (1: Sehr gut - 5: Schlecht): </label>
     <input type="radio" id="1_1" name="Inhalt" value="1">
-      <label for="1_1">1 -----</label>
+      <label class="label_radio" for="1_1">1</label>
     <input type="radio" id="2_1" name="Inhalt" value="2">
-      <label for="2_1">2 -----</label>
+      <label for="2_1">2</label>
     <input type="radio" id="3_1" name="Inhalt" value="3">
-      <label for="3_1">3     </label>
+      <label for="3_1">3</label>
     <input type="radio" id="4_1" name="Inhalt" value="4">
-      <label for="4_1">4     </label>
+      <label for="4_1">4</label>
     <input type="radio" id="5_1" name="Inhalt" value="5">
       <label for="5_1">5</label>
     </fieldset>
@@ -51,7 +58,16 @@
     <input type="radio" id="5_2" name="Zeitaufwand" value="5">
     </fieldset>
     </form>
-    <p> Hier könnt ihr ein paar Zeile zu eurer Erfahrung während des Bootcamps schrieben </p>
+    <p> Hier könnt ihr ein paar Zeile zu eurer Erfahrung während des Bootcamps schreiben: </p>
+    <textarea> <textarea/>
+    <form action="/action_page.php">
+    <label for="review">Review of Bootcamp:</label>
+    <textarea id="review" name="review" rows="4" cols="50">
+    </textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+    </form>
+    <p>Click the "Submit" button to save your feedback form".</p>
  
   </body>
 </html>
