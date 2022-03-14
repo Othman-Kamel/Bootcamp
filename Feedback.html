@@ -4,7 +4,9 @@
     <script>
     function bestaetigung_teilnahme() {
       var rb_inhalt = document.getElementById("1_1").value;
-      alert('Vielen Dank für Ihre Teilnahme!  Das Ergebnis ist: ' + rb_inhalt); 
+      <!--alert('Vielen Dank für Ihre Teilnahme!  Das Ergebnis ist: ' + rb_inhalt);--!>
+      alert($("input[name='Inhalt']:checked").val());
+});
     }
 
     function changeBG() {
