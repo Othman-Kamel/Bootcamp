@@ -3,9 +3,19 @@
   <head>
     <script>
     function bestaetigung_teilnahme() {
-      var rb_inhalt = document.getElementById("1_1").value;
-      <!--alert('Vielen Dank für Ihre Teilnahme!  Das Ergebnis ist: ' + rb_inhalt);--!>
-      alert($("input[name='Inhalt']:checked").val());
+      
+      var summe=0; 
+      for (let i=1;i<6;i++) {
+	      for (let j=1;j<6;) {
+		     if (document.getElementById(i+'_'+j).checked  == true) 
+            {
+		          summe = summe + document.getElementById(i+'_'+j).value;
+	          } else 
+              {
+                j++}
+			        }
+		       }
+      alert('Vielen Dank für Ihre Teilnahme!  Das Ergebnis ist: ' + summe);
 });
     }
 
