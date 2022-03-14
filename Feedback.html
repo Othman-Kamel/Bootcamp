@@ -3,11 +3,7 @@
   <head>
     <script> let button;
     function setup() {
-      createCanvas(100, 100);
-      background(0);
-      button = createButton('click me');
-      button.position(0, 0);
-      button.mousePressed(changeBG);
+      alert('Test');
     }
 
     function changeBG() {
@@ -23,6 +19,9 @@
   </head>
   <body onload="setup()">
     <h1> Feedback Bootcamp März 2022 test </h1>
+    <div>
+      <button onlick="setup()">Test</button>
+    </div>
     <p> test change???????? </p>
   </body>
 </html>
