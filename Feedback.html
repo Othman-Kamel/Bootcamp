@@ -6,13 +6,11 @@
       
       let summe=0; 
       for (let i=1;i<6;i++) {
-	      for (let j=1;j<6;) {
+	      for (let j=1;j<5;j++) {
 		     if (document.getElementById(i+'_'+j).checked  == true) 
             {
 		          summe = summe + document.getElementById(i+'_'+j).value;
-	          } else 
-              {
-                j++}
+	          } 
 			        }
 		       }
       alert('Vielen Dank für Ihre Teilnahme!  Das Ergebnis ist: ' + summe);
