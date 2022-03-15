@@ -3,24 +3,22 @@
   <head>
     <script>
     function bestaetigung_teilnahme() {
-      
-      let summe=0; 
-      for (let i=1;i<6;i++) {
-	      for (let j=1;j<5;j++) {
-		     if (document.getElementById(i+'_'+j).checked  == true) 
-            {
-		          summe = summe + document.getElementById(i+'_'+j).value;   <!-- Muss überprüft werden ob .value string ist, wenn ja convert to Int --> 
-	          } 
-			        }
-		       }
-      alert('Vielen Dank für Ihre Teilnahme!  Das Ergebnis ist: ' + summe);
+	let summe=0;
+	for (let i=1;i<6;i++) {
+	for (let j=1;j<5;j++) {
+	if (document.getElementById(i+'_'+j).checked == true)
+	{
+	aussgewaelter_Wert = document.getElementById(i+'_'+j).value; 
+	let zahl = parseInt(aussgewaelter_Wert);
+	summe = summe + zahl;
+	}
+	}
+	}
+	summe = summe / 4
+	alert('Vielen Dank für Ihre Teilnahme! \n \n Dein Ergebnis ist: ' + summe);
 
-    }
+     }
 
-    function changeBG() {
-      let val = random(255);
-      background(val);
-} 
     </script>
     <title> Bootcamp 03/22</title>
     <meta charset="utf-8">
