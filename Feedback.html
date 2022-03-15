@@ -5,7 +5,7 @@
     function bestaetigung_teilnahme() {
 	let summe=0;
 	for (let i=1;i<6;i++) {
-	for (let j=1;j<5;j++) {
+	for (let j=1;j<6;j++) {
 	if (document.getElementById(i+'_'+j).checked == true)
 	{
 	aussgewaelter_Wert = document.getElementById(i+'_'+j).value; 
@@ -14,7 +14,7 @@
 	}
 	}
 	}
-	summe = summe / 4
+	summe = summe / 5
 	alert('Vielen Dank für Ihre Teilnahme! \n \n Dein Ergebnis ist: ' + summe);
 
      }
@@ -101,13 +101,20 @@
     </fieldset>
     </form>
             <form>
-    <p> Würdet das Bootcamp einem/einer Freund/in empfehlen?:</p>
+    <p> Wie wahrscheinlich würdet ihr das Bootcamp einem/einer Freund/in empfehlen?:</p>
     <fieldset>
           <label> Bewertung: </label>
-    <input type="radio" id="1_5" name="Freund" value="Ja">
+    <input type="radio" id="1_5" name="Freund" value="1">
       <label class="label_radio" for="1_5">1</label>
-    <input type="radio" id="2_5" name="Freund" value="Nein">
+    <input type="radio" id="2_5" name="Freund" value="2">
       <label style="width: 200px" for="2_5">2</label>
+   <input type="radio" id="3_5" name="Freund" value="3">
+      <label style="width: 200px" for="3_5">3</label>
+   <input type="radio" id="4_5" name="Freund" value="4">
+      <label style="width: 200px" for="4_5">4</label>
+    <input type="radio" id="5_5" name="Freund" value="5">
+      <label style="width: 200px" for="5_5">5</label>
+    	    
 
     </fieldset>
     </form>
